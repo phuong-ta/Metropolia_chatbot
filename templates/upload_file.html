@@ -1,0 +1,40 @@
+<!-- Modal for Button 1 - Form with Upload and Close -->
+<div aria-hidden="true" aria-labelledby="formModalLabel" class="modal fade" id="formModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">Upload Form</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form enctype="multipart/form-data" id="data_info" method="post">
+                    <div class="modal-body">
+
+                        <div class="mb-3">
+                            <label class="form-label" for="file_path">File Path:</label>
+                            <input class="form-control" id="file_path" name="file_path" required type="file">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="role">Role</label>
+                            <input class="form-control" id="role" name="role" required type="text">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="description">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/data_uploading.js"></script>

@@ -17,7 +17,7 @@ async def root(request: Request):
 @index_router.get("/list_files")
 def list_files():
     fruit_list = ["apple", "banana", "cherry"]
-    return {"item_id": fruit_list}
+    return {"data_files": fruit_list}
 
 
 @index_router.post("/upload_file")
