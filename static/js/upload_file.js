@@ -19,6 +19,7 @@ async function send_data() {
 
         const data = await response.json();  // Ensure response is in JSON format
         alert(JSON.stringify(data));  // Print response to alert
+
         form_processing.reset();
     } catch (e) {
         console.error(e);
@@ -28,5 +29,7 @@ async function send_data() {
 
 form_processing.addEventListener("submit", (event) => {
     event.preventDefault();
-    send_data();
+    send_data().catch(error => {
+        console.error("Error in handleListFilesClick:", error);
+    });
 });
