@@ -21,5 +21,5 @@ def list_files():
 
 
 @index_router.post("/upload_file")
-async def update_admin():
+async def upload_file():
     return {"message": "Admin getting schwifty"}
