@@ -1,0 +1,20 @@
+<div class="chatbox-container">
+    <div class="button-container d-flex justify-content-end mb-2">
+        <button class="btn btn-primary" data-bs-target="#formModal" data-bs-toggle="modal">Upload file</button>
+        <button class="btn btn-primary" data-bs-target="#contentModal" data-bs-toggle="modal">Usage</button>
+    </div>
+
+    <!-- Chatbox area -->
+    <div class="chatbox" id="chatbox">
+
+        <!-- More messages can go here -->
+    </div>
+
+    <!-- Text area for user input -->
+    <div class="text-area-container">
+        <textarea class="form-control" id="text-area" placeholder="Type your message here..."></textarea>
+        <button class="btn btn-primary" onclick="send_message()">Send</button>
+    </div>
+</div>
+
+<script src="/static/js/chatbox.js"></script>

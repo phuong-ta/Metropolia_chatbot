@@ -23,29 +23,7 @@
     </div>
 
     <!-- Chatbox and Controls -->
-    <div class="chatbox-container">
-        <div class="button-container d-flex justify-content-end mb-2">
-            <button class="btn btn-primary" data-bs-target="#formModal" data-bs-toggle="modal">Upload file</button>
-            <button class="btn btn-primary" data-bs-target="#contentModal" data-bs-toggle="modal">Usage</button>
-        </div>
-
-        <!-- Chatbox area -->
-        <div class="chatbox" id="chatbox">
-            <div class="message">
-                <div class="bot-message">Bot's response</div>
-            </div>
-            <div class="message">
-                <div class="user-message">User's message</div>
-            </div>
-            <!-- More messages can go here -->
-        </div>
-
-        <!-- Text area for user input -->
-        <div class="text-area-container">
-            <textarea class="form-control" placeholder="Type your message here..."></textarea>
-            <button class="btn btn-primary">Send</button>
-        </div>
-    </div>
+    {% include 'chatbox.html' %}
 </div>
 
 {% include 'upload_file.html' %}
